@@ -1,19 +1,18 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useAuth } from '../hooks/useAuth';
+import React from 'react'
+
+import { useAuth } from '../hooks/useAuth'
+
+import { Link } from 'react-router-dom'
 
 const HomePage = () => {
   const {auth} = useAuth();
   console.log(auth);
+
   return (
     <div>
-     
-      HomePage
-      <Link to="/me">
-      go to profile
-      </Link>
-
-      </div>
+      <p>HomePage</p>
+      <Link to="/me">Go to Profile Page</Link>
+    </div>
   )
 }
 
